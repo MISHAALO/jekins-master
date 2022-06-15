@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+ jenkins-master-soop1:
+  build: .
+  image: jenkins-master-soop1
+  volumes:
+      - /home/mbagdasaryan/jenkins:/tmp/
+#      - /home/mbagdasaryan/m2:/home/jenkins/.m2/
+  container_name: jenkins-master-soop1
+  ports:
+     - "8010:8080"
+ 
